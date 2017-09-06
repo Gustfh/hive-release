@@ -236,7 +236,7 @@ public class HiveServer2 extends CompositeService {
         // No node exists, throw exception
         throw new Exception("Unable to create znode for this HiveServer2 instance on ZooKeeper.");
       }
-      LOG.info("Created a znode on ZooKeeper for HiveServer2 uri: " + instanceURI);
+      LOG.info("Created a znode on ZooKeeper for Real HiveServer2 uri: " + instanceURI);
     } catch (Exception e) {
       LOG.fatal("Unable to create a znode for this server instance", e);
       if (znode != null) {
